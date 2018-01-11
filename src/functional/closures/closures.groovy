@@ -7,8 +7,6 @@ package functional.closures
 
     In opposition to the formal definition of a closure, a closure in Groovy can also contain free variables which are
     defined outside of its surrounding scope.
-
-
  */
 def squared = { e ->  e * e }
 
@@ -17,16 +15,14 @@ assert squared(3) == 9
 
 // if not using def, the type Closure can be used
 Closure callBack = {println 'Done!'}
+callBack()
 
 //Generic type can be used
 Closure<Boolean> isEvenNumber = { num -> num % 2 == 0 }
-
 assert isEvenNumber(2) == true
-
 
 //closure can be called using the call method
 assert isEvenNumber.call(3) == false
-
 
 //closure with one argument
 def closureWithOneArg = {str -> str.toUpperCase()}

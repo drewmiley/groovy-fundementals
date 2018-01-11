@@ -8,7 +8,7 @@ package looping
 def x = 0
 
 for(i in 0..9){
-    x+=i
+    x += i
 }
 
 assert x == 45

@@ -5,8 +5,6 @@ package collections.maps
 /*
    DEFINING MAPS
  */
-
-
 //map literal values, keys are Strings by default
 def capitals = [England:'London',France:'Paris', Germany:'Berlin',Spain:'Madrid']
 
@@ -15,7 +13,6 @@ assert capitals.France == 'Paris'
 
 // unknown values are null
 assert capitals.unknown == null
-
 
 /*
    ADDING VALUES
@@ -30,6 +27,10 @@ def key = 'Japan'
 capitals.put(key,'Tokyo')
 assert capitals['Japan'] == 'Tokyo'
 
+String stringKey = 'Italy'
+capitals.put(stringKey, 'Rome')
+assert capitals.Italy == 'Rome'
+
 /*
    ITERATING
  */
@@ -39,6 +40,7 @@ capitals.each {k,v ->
 }
 
 capitals.each{
+    println it.key
     println it.value
 }
 

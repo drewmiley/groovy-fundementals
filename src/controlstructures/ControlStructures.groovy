@@ -7,7 +7,7 @@ package controlstructures
    can be performed.
  */
 
-def x = 3
+def x = 7
 def result = ""
 
 switch (x){
@@ -17,11 +17,11 @@ switch (x){
         break
 
     case [4,5,6]:
-        result = "list"
+        result = "list contains"
         break
 
-    case 4..30:
-        result = "range"
+    case 12..30:
+        result = "range contains"
         break
 
     case Integer:
@@ -32,5 +32,6 @@ switch (x){
         result = "default"
         break
 }
+
 println result
-//assert result == 'integer'
+assert result == 'integer'

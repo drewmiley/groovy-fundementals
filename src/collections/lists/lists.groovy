@@ -12,6 +12,7 @@ assert list.size() == 4
 //different types are supported, duplicates are allowed
 def multiType = [1,'a']
 
+assert multiType[0] == 1
 assert multiType.get(1) == 'a'
 
 
@@ -24,6 +25,9 @@ assert list[4] == 9
 
 list.putAt(1,1)
 assert list[1] == 1
+
+list[2] = 2
+assert list.getAt(2) == 2
 
 list << 10
 assert list[5] == 10

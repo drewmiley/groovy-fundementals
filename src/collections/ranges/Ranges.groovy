@@ -25,6 +25,7 @@ assert inclusive == '234'
 
 def exclusive = ''
 
-2..<4.each{
-    exclusive += '23'
+(2..<4).each{
+    exclusive += it
 }
+assert exclusive == '23'
