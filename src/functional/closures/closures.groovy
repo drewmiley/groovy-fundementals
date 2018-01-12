@@ -45,3 +45,15 @@ assert closureWithTwoArgAndDefaultValue(1) == 3
 
 def closureWithImplicitParameter = {"Hello $it"}
 assert closureWithImplicitParameter("John") == "Hello John"
+
+/*
+    CHAINING
+ */
+
+def (doubledLessThanFive,doubledGreaterThanFive) = (1..10).findAll{it % 2==0}.each{ it * 2}.split{it > 5}
+println doubledLessThanFive
+println doubledGreaterThanFive
+
+
+
+
