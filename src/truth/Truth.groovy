@@ -1,23 +1,11 @@
-package operators
+package truth
 
 /*
-   POWER
- */
-assert 2 ** 4 == 16
-
-/*
-   TERNARY
+    Groovy allows it to be shortened due to its principles of Groovy Truth
+    Non-empty Strings, GStrings and CharSequences are coerced to true
  */
 def name = 'John'
 
-// standard ternary
-result = (name!=null && name.length() > 0) ? 'Found':'Not found'
-assert result == 'Found'
-
-/*
-    Groovy allows it to be shortened due to its principles of Groovy truth
-    Non-empty Strings, GStrings and CharSequences are coerced to true
- */
 result = name ? 'Found' : 'Not Found'
 assert result == 'Found'
 
