@@ -33,3 +33,20 @@ println concat
 // slash strings use / as a delimiter. They are particularly useful for defining regular expressions.
 def groovyPattern = /groovy/
 assert groovyPattern == 'groovy'
+
+/*
+    DOLLAR SLASHY
+ */
+def dollarSlashy = $/
+    Hello $name
+    today we're ${new Date()}.
+    $ dollar sign
+    $$ escaped dollar sign
+    \ backslash
+    / forward slash
+    $/ escaped forward slash
+    $$$/ escaped opening dollar slashy
+    $/$$ escaped closing dollar slashy
+/$
+    
+println dollarSlashy
