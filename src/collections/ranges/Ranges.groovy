@@ -10,6 +10,7 @@ assert ints.to == 10
 
 //just a list
 assert ints[0] == 1
+assert ints.get(2) == 3
 
 //Iterating
 ints.each {
