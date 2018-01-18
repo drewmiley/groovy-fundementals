@@ -23,3 +23,5 @@ nbdist/
 .nb-gradle/
 
 /out
+
+src/xml/fells_loop_output.xml

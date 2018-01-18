@@ -10,7 +10,13 @@ result = name ? 'Found' : 'Not Found'
 assert result == 'Found'
 
 /*
-    An empty list is coerced to false
+    An empty object is coerced to true
+ */
+result = new Object() ? 'Groovy Truth' : 'Groovy False'
+assert result == 'Groovy Truth'
+
+/*
+    An empty collection is coerced to false
  */
 result = [] ? 'Groovy Truth' : 'Groovy False'
 assert result == 'Groovy False'
@@ -20,6 +26,12 @@ assert result == 'Groovy False'
  */
 result = {} ? 'Groovy Truth' : 'Groovy False'
 assert result == 'Groovy Truth'
+
+/*
+    An empty map is coerced to false
+ */
+result = [:] ? 'Groovy Truth' : 'Groovy False'
+assert result == 'Groovy False'
 
 /*
    The elvis operator shortens the ternary operator further.
