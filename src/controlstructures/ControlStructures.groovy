@@ -8,7 +8,7 @@ package controlstructures
  */
 
 def x = 7
-def result = ""
+def result
 
 switch (x){
 

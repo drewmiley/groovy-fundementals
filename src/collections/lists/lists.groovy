@@ -18,7 +18,7 @@ assert multiType.get(1) == 'a'
 /*
     ACCESS METHODS
  */
-def accessList = ['a', 'b', 'c', 'd', 'e'];
+def accessList = ['a', 'b', 'c', 'd', 'e']
 
 assert 'c' == accessList.get(2), 'get method'
 assert 'd' == accessList[3], 'index access'
@@ -72,7 +72,7 @@ assert list.remove(0) == 5
 /*
     SLICING A LIST
  */
-def slicingList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+def slicingList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 assert ['b', 'c', 'd'] == slicingList[1..3]
 assert ['a', 'c', 'e'] == slicingList[0,2,4]
